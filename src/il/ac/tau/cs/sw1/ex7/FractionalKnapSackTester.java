@@ -16,7 +16,7 @@ public class FractionalKnapSackTester {
         FractionalKnapSack.Item s2 = new FractionalKnapSack.Item(20,100);
         FractionalKnapSack.Item s3 = new FractionalKnapSack.Item(30,120);
         FractionalKnapSack s = new FractionalKnapSack(50, Arrays.asList(s3,s1,s2));
-        assertEquals("[{weight=10.0, value=60.0}, {weight=20.0, value=100.0}, {weight=20.0, value=120.0}]", s.greedyAlgorithm().toString());
+        assertEquals("[{weight=10.0, value=60.0}, {weight=20.0, value=100.0}, {weight=20.0, value=80.0}]", s.greedyAlgorithm().toString());
     }
 
     @Test
@@ -44,7 +44,7 @@ public class FractionalKnapSackTester {
         FractionalKnapSack.Item s1 = new FractionalKnapSack.Item(12,34.5);
         FractionalKnapSack.Item s2 = new FractionalKnapSack.Item(170,300);
         FractionalKnapSack s = new FractionalKnapSack(5, Arrays.asList(s1,s2));
-        assertEquals("[{weight=5.0, value=34.5}]", s.greedyAlgorithm().toString());
+        assertEquals("[{weight=5.0, value=14.375}]", s.greedyAlgorithm().toString());
     }
 
     @Test
